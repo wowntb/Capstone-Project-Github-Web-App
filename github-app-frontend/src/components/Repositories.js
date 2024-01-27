@@ -97,16 +97,34 @@ function Repositories({ repos_url }) {
                   {repo.name}
                 </a>
               </h3>
-              <p>Description: {repo.description}</p>
-              <p>Creation Date: {repoDetails[repo.name]?.creationDate}</p>
+              <p>
+                Description:{" "}
+                {loading ? (
+                  <FontAwesomeIcon icon={faSpinner} pulse />
+                ) : (
+                  repo.description
+                )}
+              </p>
+              <p>
+                Creation Date:{" "}
+                {loading ? (
+                  <FontAwesomeIcon icon={faSpinner} pulse />
+                ) : (
+                  repoDetails[repo.name]?.creationDate
+                )}
+              </p>
               <p>Last 5 Commits:</p>
               <ul>
-                {repoDetails[repo.name]?.lastCommits.map((commit, index) => (
-                  <li key={index}>
-                    <strong>Date:</strong> {commit.date}.{" "}
-                    <strong>Message:</strong> {commit.message}
-                  </li>
-                ))}
+                {loading ? (
+                  <FontAwesomeIcon icon={faSpinner} pulse />
+                ) : (
+                  repoDetails[repo.name]?.lastCommits.map((commit, index) => (
+                    <li key={index}>
+                      <strong>Date:</strong> {commit.date}.{" "}
+                      <strong>Message:</strong> {commit.message}
+                    </li>
+                  ))
+                )}
               </ul>
             </div>
           ))

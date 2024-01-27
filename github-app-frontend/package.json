@@ -39,9 +39,11 @@
   },
   "proxy": "http://localhost:5000",
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@babel/preset-env": "^7.23.9",
     "@babel/preset-react": "^7.23.3",
     "babel-jest": "^29.7.0",
+    "babel-preset-react-app": "^10.0.1",
     "react-test-renderer": "^18.2.0"
   }
 }
