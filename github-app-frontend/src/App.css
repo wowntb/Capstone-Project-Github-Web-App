@@ -1,0 +1,89 @@
+@font-face {
+  font-family: Sono;
+  src: url(../public/fonts/Sono/static/Sono-Regular.ttf);
+}
+@font-face {
+  font-family: cairoPlay;
+  src: url(../public/fonts/Cairo_Play/static/CairoPlay-Regular.ttf);
+}
+@font-face {
+  font-family: Geometos;
+  src: url(../public/fonts/Geometos/Geometos.ttf);
+}
+
+h1 {
+  color: #58a6ff;
+  font-size: 36pt;
+  font-family: Geometos;
+  text-align: center;
+}
+
+h2 {
+  font-size: 24pt;
+  text-align: center;
+  font-family: cairoPlay;
+}
+
+h3 {
+  font-family: Sono;
+}
+
+input,
+button {
+  padding: 8px;
+  margin: 8px;
+  border: 1px solid #c9d1d9;
+  border-radius: 20px;
+  background-color: #161b22;
+  color: #c9d1d9;
+}
+
+button:hover {
+  background-color: #388bfd;
+}
+
+p {
+  font-family: Sono;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #ff0077;
+}
+
+.outer-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner-div {
+  background-color: #58a6ff;
+  padding: 10px;
+  border-radius: 50px;
+}
+
+.avatar-container {
+  display: flex;
+  justify-content: center; /* Horizontally center the content */
+}
+
+.avatar {
+  border-radius: 100%;
+  width: 200px;
+
+  box-shadow: 0px 2px 5px rgb(0, 0, 0);
+}
+
+.repo-container {
+  background-color: #161b22;
+  margin: 5px;
+  padding: 10px;
+  padding-left: 20px;
+  border-radius: 10px;
+  color: white;
+}
